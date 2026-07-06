@@ -7,7 +7,7 @@ export const CONFIG = {
     messagingSenderId: "61856199612",
     appId: "1:61856199612:web:9bd6f786857406a9b3f1b9"
   },
-  API_BASE_URL: 'https://ace-ops-api.azrielspace852.workers.dev', , // GANTI NANTI SETELAH DEPLOY WORKER
+  API_BASE_URL: 'https://ace-ops-api.azrielspace852.workers.dev', // GANTI NANTI SETELAH DEPLOY WORKER
   get API_URL() { return `${this.API_BASE_URL}/api/v1`; },
   endpoints: {
     auth: { verify: '/auth/verify' },
