@@ -22,4 +22,4 @@ export async function resetCredits(uid, targetUid) {
   const user = await userRepo.findById(targetUid);
   if (!user) throw new Error('User not found');
   await userRepo.update(targetUid, { creditRemaining: user.creditLimit || 240 });
-    }
+}
